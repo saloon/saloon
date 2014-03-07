@@ -1,0 +1,35 @@
+@import 'variables'
+@import 'bootstrap'
+@import 'projects'
+@import 'about'
+
+body
+  border-top: $saloon-red 4px solid
+
+h1, h2, h3, h4, h5, h6
+  font-family: "adelle", serif
+  font-weight: 100
+
+*, p
+  font-family: "proxima-nova"
+
+p
+  font-size: 1.2em
+  line-height: 1.7em
+
+.navbar-logo
+  height: $navbar-height
+  margin-top: $navbar-padding-vertical
+
+.navbar
+  background: transparent
+
+.nav li
+  text-align: center
+  margin-left: 1em
+  a
+    font-size: 1.3em
+    line-height: $navbar-height
+    font-weight: 600
+    &.current, &.current:hover
+      color: $saloon-red

@@ -1,0 +1,32 @@
+.projects-preview
+  .project
+    &.project-red
+      background: $saloon-red
+      color: #FFF
+    &.project-blue
+      background: #2980b9
+    &.project-green
+      background: #27ae60
+    &.project-orange
+      background: #f39c12
+
+    border-radius: 1000px
+    width: 180px
+    height: 180px
+    position: absolute
+
+    transition: width 0.2s ease-out, height 0.2s ease-out, margin-top 0.2s ease-out, margin-left 0.2s ease-out, text-align 0.2s ease-out
+
+    line-height: 180px
+    text-align: center
+
+    font-size: 1.3em
+    font-family: 'adelle'
+    cursor: pointer
+
+
+    &:hover
+      margin-top: -35px
+      margin-left: -35px
+      width: 250px
+      height: 250px

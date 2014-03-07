@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js hundredPercentHeight ie6 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js hundredPercentHeight ie7 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js hundredPercentHeight ie8 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js hundredPercentHeight <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <!--<![endif]-->
+<head>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <title dir="<?php bloginfo('text_direction'); ?>"><?php
+  if ( is_single() ) {
+    single_post_title();
+    print ' • ';
+    bloginfo('name');
+  } elseif ( is_front_page() ) {
+    bloginfo('name'); print ' • '; bloginfo('description'); get_page_number();
+  } elseif ( is_page() ) {
+    single_post_title('');
+    print ' • ';
+    bloginfo('name');
+  } elseif ( is_search() ) {
+    bloginfo('name');
+    print ' • Search results for ' . wp_specialchars($s);
+    get_page_number();
+  } elseif ( is_404() ) {
+    bloginfo('name');
+    print ' • Not found';
+  } else {
+    bloginfo('name');
+    wp_title('•', true);
+    get_page_number();
+  }
+  ?></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/foundation.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
+  <meta name="author" content="Saloon">
+  <meta name="city" content="Vienna">
+  <meta name="country" content="Austria">
+  <meta name="state" content="Vienna">
+  <meta name="zipcode" content="1100">
+  <meta name="geo.position" content="48.208174;16.373819">
+  <meta name="geo.placename" content="Vienna, VIE">
+  <meta name="geo.region" content="AT">
+  <meta name="icbm" content="48.208174;16.373819">
+  <meta name="robots" content="index, follow">
+  <meta property="fb:page_id" content="saloon.io">
+
+  <?php /*if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); */?>
+
+  <?php remove_action('wp_head', 'wp_generator'); ?>
+  <?php wp_head(); ?>
+  <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf('%s latest posts', wp_specialchars( get_bloginfo('name'), 1 ) ); ?>">
+  <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf('%s latest comments', wp_specialchars( get_bloginfo('name'), 1 ) ); ?>">
+  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
+
+  <script type="text/javascript" src="//use.typekit.net/jxr7xsz.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a href="#"><img class="navbar-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+    </div>
+
+    <div>
+      <ul class="nav navbar-nav navbar-right hidden-xs">
+        <!--<li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>-->
+        <li><a href="#" class="current">About us</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
