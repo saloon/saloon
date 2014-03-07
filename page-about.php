@@ -15,12 +15,12 @@
             <img src="http://gravatar.com/avatar/6217b8ec20914163fc0ea79cd20e0a4a?s=200" class="avatar img-circle">
             <div class="about-text-name">
               <h2>Nicolas Dular</h2>
-              <h4><small><i class="fa fa-heart"></i> UI/UX Design | Drums | Photography</small></h4>
+              <h4><small><i class="fa fa-heart"></i> UI/UX Designer | Drummer | Photographer</small></h4>
             </div>
           </div>
         </div>
 
-        <p>I am a <?= floor((time() - strtotime('Sept 24, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old Developer who felt in love with UI and UX design. Creating something from nothing was always fascinating to me. Beside university, work, my band and other stuff I enjoy coding in Ruby on Rails.</p>
+        <p>I am a <?= floor((time() - strtotime('Sept 24, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old developer who felt in love with UI and UX design. Creating something from nothing was always fascinating to me. Besides studying, working, my band and other stuff I enjoy coding in Ruby on Rails.</p>
 
         <ul class="list-inline social-icons">
           <li><a href="http://github.com/nicolas-dular"><i class="fa fa-github"></i></a></li>
@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <p>I'm a computer science student and programming for <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)) - 11; ?> years. Today, I do most of the development jobs in Ruby or Coffee-Script. At Saloon, I'm resposible for making everything rock-sloid. I'm <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old.</p>
+        <p>I'm a computer science student and programming for <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)) - 11; ?> years. Today, I do most of the development jobs in Ruby or Coffee-Script. At Saloon, I'm responsible for making everything rock-solid. I'm <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old.</p>
 
         <ul class="list-inline social-icons">
           <li><a href="http://github.com/philipp-spiess"><i class="fa fa-github"></i></a></li>
