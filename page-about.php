@@ -47,7 +47,7 @@
 
         <ul class="list-inline social-icons">
           <li><a href="http://github.com/philipp-spiess"><i class="fa fa-github"></i></a></li>
-          <li><a href="http://github.com/philipp-spiess"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="http://twitter.com/philippspiess"><i class="fa fa-twitter"></i></a></li>
           <li><a href="http://facebook.com/spiessphilipp"><i class="fa fa-facebook"></i></a></li>
         </ul>
       </div>
