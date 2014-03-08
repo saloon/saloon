@@ -15,7 +15,7 @@
             <img src="http://gravatar.com/avatar/6217b8ec20914163fc0ea79cd20e0a4a?s=200" class="avatar img-circle">
             <div class="about-text-name">
               <h2>Nicolas Dular</h2>
-              <h4><small><i class="fa fa-heart"></i> UI/UX Designer | Drummer | Photographer</small></h4>
+              <h4><small><i class="fa fa-heart"></i> UI/UX Design | Drums | Photography</small></h4>
             </div>
           </div>
         </div>
