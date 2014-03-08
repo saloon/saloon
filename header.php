@@ -65,18 +65,18 @@
 </head>
 
 <body>
-
 <div class="container">
+
   <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
       <a href="#"><img class="navbar-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
     </div>
 
     <div>
+
       <ul class="nav navbar-nav navbar-right hidden-xs">
-        <!--<li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>-->
-        <li><a href="#" class="current">About us</a></li>
+        <li><a href="/blog" class="<? echo is_page('blog') ? 'current':'' ?>">Blog</a></li>
+        <li><a href="/about" class=" <? echo is_page('about') ? 'current':'' ?>">About us</a></li>
       </ul>
     </div>
   </nav>
