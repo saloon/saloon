@@ -75,7 +75,6 @@
     <div>
 
       <ul class="nav navbar-nav navbar-right hidden-xs">
-        <li><a href="/blog" class="<? echo is_page('blog') ? 'current':'' ?>">Blog</a></li>
         <li><a href="/about" class=" <? echo is_page('about') ? 'current':'' ?>">About us</a></li>
       </ul>
     </div>
