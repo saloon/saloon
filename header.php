@@ -1,8 +1,17 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js hundredPercentHeight ie6 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js hundredPercentHeight ie7 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js hundredPercentHeight ie8 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js hundredPercentHeight <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="ie6 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie <?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="<?php echo substr(get_bloginfo('language'), 0, 2); ?>" lang="<?php echo substr(get_bloginfo('language'), 0, 2); ?>"> <!--<![endif]-->
+<!--
+    Nice to meet you here!
+
+    We are always looking for talented people to help us experiment with the latest project.
+    If you're interested, drop us a line:
+    awesome@saloon.io
+
+    -P
+-->
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
@@ -12,7 +21,7 @@
     print ' • ';
     bloginfo('name');
   } elseif ( is_front_page() ) {
-    bloginfo('name'); print ' • '; bloginfo('description'); get_page_number();
+    bloginfo('name'); /*print ' • '; bloginfo('description');*/ get_page_number();
   } elseif ( is_page() ) {
     single_post_title('');
     print ' • ';
@@ -35,7 +44,6 @@
   <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/foundation.min.css">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
   <meta name="author" content="Saloon">
   <meta name="city" content="Vienna">
   <meta name="country" content="Austria">
@@ -44,7 +52,6 @@
   <meta name="geo.position" content="48.208174;16.373819">
   <meta name="geo.placename" content="Vienna, VIE">
   <meta name="geo.region" content="AT">
-  <meta name="icbm" content="48.208174;16.373819">
   <meta name="robots" content="index, follow">
   <meta property="fb:page_id" content="saloon.io">
 
