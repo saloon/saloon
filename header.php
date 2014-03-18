@@ -67,6 +67,8 @@
   <script type="text/javascript" src="//use.typekit.net/jxr7xsz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.smooth-scroll.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
@@ -79,9 +81,8 @@
       <a href="#"><img class="navbar-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
     </div>
 
-    <div>
-
       <ul class="nav navbar-nav navbar-right hidden-xs">
+        <li><a href="/blog" class=" <? echo is_page('blog') ? 'current':'' ?>">Blog</a></li>
         <li><a href="/about" class=" <? echo is_page('about') ? 'current':'' ?>">About us</a></li>
       </ul>
     </div>

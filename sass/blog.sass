@@ -1,20 +1,82 @@
-.article-header
-  .article-title a
-    font-family: "adelle", serif
+.blog-single
+  border-right: 2px $gray-lighter solid
+  .article-title
+    font-family: "proxima-nova"
+    font-size: 50px
+    color: #FFF
+    font-weight: bold
+    letter-spacing: -2px
+    line-height: 1em
+
+  .article-title-about
+    padding-top: 20px
+
+
+.article-featured-image
+  width: 100%
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-attachment: fixed
+  box-shadow: 0px -600px 300px -200px rgba(0,0,0,.55) inset
+
+.article-featured-image-wrapper
+  height: auto
+  margin-bottom: 50px
+
+.blog-single-article-header
+  position: absolute
+  bottom: 150px
+  width: 100%
 
   .img-author
-    width: 35px
-    height: 35px
+    width: 50px
+    height: 50px
 
   .article-info
     font-size: 14px
-    line-height: 1.3em
-    color: $gray-light
+    color: #e3e3e3
     a
-      color: $gray-light
-      text-decoration: underline
+      color: #e3e3e3
+      &:hover
+        color: #FFF
+    span
+
+.blog-single .content
+  p, h1, h2, h3, h4, h5, h6
+    -webkit-font-smoothing: antialiased
+    letter-spacing: .01rem
+    text-rendering: optimizeLegibility
+  p
+    font-size: 20px
+    line-height: 1.5em
+    font-family: "adelle", serif
+    padding-top: 10px
+
+  h1, h2, h3, h5, h6
+    margin-top: 40px
+    font-weight: bold
+    font-family: "proxima-nova"
+
+  img
+    margin-top: 30px
+    margin-bottom: 30px
+
+.blog-single-scroll-down
+  color: #aaa
+  font-size: 50px
+  position: absolute
+  bottom: 50px
+  text-align: center
+  width: 100%
+  &:hover
+    color: #FFF
 
 .blog-list .article
   padding-bottom: 50px
   margin-bottom: 50px
   border-bottom: 2px $gray-lighter solid
+
+
