@@ -2897,7 +2897,9 @@ td.visible-print {
     color: white;
     font-weight: bold;
     letter-spacing: -2px;
-    line-height: 1em; }
+    line-height: 1.3em; }
+    .blog-single .article-title span {
+      background: rgba(50, 50, 50, 0.3); }
   .blog-single .article-title-about {
     padding-top: 20px; }
 
@@ -2928,6 +2930,8 @@ td.visible-print {
       color: #e3e3e3; }
       .blog-single-article-header .article-info a:hover {
         color: white; }
+    .blog-single-article-header .article-info span {
+      background: rgba(50, 50, 50, 0.2); }
 
 .blog-single .content p, .blog-single .content h1, .blog-single .content h2, .blog-single .content h3, .blog-single .content h4, .blog-single .content h5, .blog-single .content h6 {
   -webkit-font-smoothing: antialiased;

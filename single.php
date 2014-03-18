@@ -16,7 +16,7 @@
                 </span>
               </h1>
               <div class="media article-title-about">
-                <img src="https://secure.gravatar.com/avatar/<? echo md5(get_the_author_meta('email'))?>?s=200" class="img-circle media-object pull-left img-author">
+                <img src="https://secure.gravatar.com/avatar/<?php echo md5(get_the_author_meta('email'))?>?s=200" class="img-circle media-object pull-left img-author">
                 <div class="media-body">
                   <p class="article-info">
                     <span>
