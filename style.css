@@ -3016,3 +3016,10 @@ a {
 
 img {
   max-width: 100%; }
+
+.footer {
+  width: 100%;
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 2px #eeeeee solid;
+  background: #fafafa; }
