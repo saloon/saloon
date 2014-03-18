@@ -5,7 +5,10 @@
     color: #FFF
     font-weight: bold
     line-height: 1.3em
-    font-size: 35px
+    font-size: 25px
+
+    @media (min-width: $screen-sm)
+      font-size: 35px
 
     @media (min-width: $screen-md)
       font-size: 50px
@@ -24,7 +27,6 @@
   background-size: cover
   background-position: 50% 50%
   background-repeat: no-repeat
-  background-attachment: fixed
 
 .article-featured-image-wrapper
   height: auto
@@ -57,9 +59,10 @@
     text-rendering: optimizeLegibility
   p
     font-size: 20px
-    line-height: 1.5em
+    line-height: 1.6em
     font-family: "adelle", serif
     padding-top: 10px
+    color: #333
 
   h1, h2, h3, h5, h6
     margin-top: 40px
