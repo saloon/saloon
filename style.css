@@ -2908,8 +2908,7 @@ td.visible-print {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  box-shadow: 0px -600px 300px -200px rgba(0, 0, 0, 0.55) inset; }
+  background-attachment: fixed; }
 
 .article-featured-image-wrapper {
   height: auto;
@@ -3000,3 +2999,6 @@ a {
     font-weight: 600; }
     .nav li a.current, .nav li a.current:hover {
       color: #c53c3d; }
+
+img {
+  max-width: 100%; }
