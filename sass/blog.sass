@@ -2,11 +2,15 @@
   border-right: 2px $gray-lighter solid
   .article-title
     font-family: "proxima-nova"
-    font-size: 50px
     color: #FFF
     font-weight: bold
-    letter-spacing: -2px
     line-height: 1.3em
+    font-size: 35px
+
+    @media (min-width: $screen-md)
+      font-size: 50px
+      letter-spacing: -2px
+
     span
       background: rgba(50,50,50,.3)
 
@@ -28,8 +32,11 @@
 
 .blog-single-article-header
   position: absolute
-  bottom: 150px
   width: 100%
+  bottom: 50px
+
+  @media (min-height: 600px)
+    bottom: 150px
 
   .img-author
     width: 50px
@@ -37,11 +44,9 @@
 
   .article-info
     font-size: 14px
-    color: #e3e3e3
+    color: #FFF
     a
-      color: #e3e3e3
-      &:hover
-        color: #FFF
+      color: #FFF
     span
       background: rgba(50,50,50,.2)
 
@@ -69,9 +74,12 @@
   color: #aaa
   font-size: 50px
   position: absolute
-  bottom: 50px
+  bottom: 0px
   text-align: center
   width: 100%
+
+  @media (min-height: 600px)
+    bottom: 50px
   &:hover
     color: #FFF
 
