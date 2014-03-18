@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php while ( have_posts() ) : the_post() ?>
 
-<? $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full")?>
+<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full")?>
 
 <div class="blog-single">
   <div class="article-featured-image-wrapper">
