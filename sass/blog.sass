@@ -5,7 +5,7 @@
     color: #FFF
     font-weight: bold
     line-height: 1.3em
-    font-size: 25px
+    font-size: 30px
 
     @media (min-width: $screen-sm)
       font-size: 35px
@@ -32,7 +32,7 @@
   height: auto
   margin-bottom: 50px
 
-.blog-single-article-header
+.blog-single-article-header-wrapper
   position: absolute
   width: 100%
   bottom: 50px
@@ -40,6 +40,7 @@
   @media (min-height: 600px)
     bottom: 150px
 
+.blog-single-article-header
   .img-author
     width: 50px
     height: 50px
@@ -52,22 +53,29 @@
     span
       background: rgba(50,50,50,.2)
 
+.blog-single-article-header,
 .blog-single .content
-  p, h1, h2, h3, h4, h5, h6
-    -webkit-font-smoothing: antialiased
-    letter-spacing: .01rem
-    text-rendering: optimizeLegibility
-  p
+  padding: 0 20px
+
+  @media (min-width: $screen-sm)
+    width: 672px
+    margin: auto
+
+.blog-single .content
+  p, a
     font-size: 20px
     line-height: 1.6em
-    font-family: "adelle", serif
+    font-family: "kepler-std", serif
     padding-top: 10px
-    color: #333
+    font-weight: 100
 
   h1, h2, h3, h5, h6
     margin-top: 40px
     font-weight: bold
-    font-family: "proxima-nova"
+
+  @media (min-width: $screen-sm)
+    p, a
+      font-size: 22px
 
   img
     margin-top: 30px
