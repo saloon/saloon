@@ -1,7 +1,7 @@
 .blog-single
   border-right: 2px $gray-lighter solid
   .article-title
-    font-family: "proxima-nova"
+    font-family: $font-sans-serif
     color: #FFF
     font-weight: bold
     line-height: 1.3em
@@ -53,34 +53,6 @@
     span
       background: rgba(50,50,50,.2)
 
-.blog-single-article-header,
-.blog-single .content
-  padding: 0 20px
-
-  @media (min-width: $screen-sm)
-    width: 672px
-    margin: auto
-
-.blog-single .content
-  p, a, code
-    font-size: 20px
-    line-height: 1.6em
-    font-family: "kepler-std", serif
-    padding-top: 10px
-    font-weight: 100
-
-  h1, h2, h3, h5, h6
-    margin-top: 40px
-    font-weight: bold
-
-  @media (min-width: $screen-sm)
-    p, a
-      font-size: 22px
-
-  img
-    margin-top: 30px
-    margin-bottom: 30px
-
 .blog-single-scroll-down
   color: #aaa
   font-size: 50px
@@ -93,6 +65,68 @@
     bottom: 50px
   &:hover
     color: #FFF
+
+.blog-single-article-header,
+.blog-single .content,
+.blog-single .about-author,
+.blog-single .subscribe
+  padding: 0 20px
+
+  @media (min-width: $screen-sm)
+    width: 672px
+    margin: auto
+
+.blog-single .content,
+.blog-single .about-author,
+.blog-single .subscribe
+  p, a, code, strong
+    font-size: 20px
+    line-height: 1.6em
+    font-family: $font-serif
+    padding-top: 10px
+    font-weight: 100
+
+  strong
+    font-weight: 700
+
+  h1, h2, h3, h4, h5, h6
+    margin-top: 40px
+    font-weight: bold
+
+  @media (min-width: $screen-sm)
+    p, a
+      font-size: 22px
+
+  img
+    margin-top: 30px
+    margin-bottom: 30px
+
+.blog-single .subscribe,
+.blog-single .about-author
+  p, strong
+    padding-top: 0
+    font-size: 18px
+
+.blog-single .about-author
+  hr
+    width: 100px
+    margin: 80px auto
+    border-color: #e3e3e3
+
+  img
+    width: 100px
+    height: 100px
+
+  .media-body
+    padding-left: 20px
+
+  img, .media-heading
+    margin-top: 0
+
+.blog-single .subscribe
+  border-top: 1px $gray-lighter solid
+  margin-top: 50px
+  padding-bottom: 50px
 
 .blog-list .article
   padding-bottom: 50px
