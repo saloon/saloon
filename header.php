@@ -42,7 +42,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
-  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/foundation.min.css">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/style.css">
   <meta name="author" content="Saloon">
   <meta name="city" content="Vienna">
@@ -78,10 +77,20 @@
 
   <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <div class="pull-left">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+        <div class="icon-bar-label pull-right">MENU</div>
+      </button>
+
       <a href="#"><img class="navbar-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
     </div>
-
-      <ul class="nav navbar-nav navbar-right hidden-xs">
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="/blog" class=" <? echo is_page('blog') ? 'current':'' ?>">Blog</a></li>
         <li><a href="/about" class=" <? echo is_page('about') ? 'current':'' ?>">About us</a></li>
       </ul>

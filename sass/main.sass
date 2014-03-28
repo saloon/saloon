@@ -33,7 +33,7 @@ a
 
 .navbar
   background: transparent
-  @media (min-width: $screen-md)
+  @media (min-width: $screen-sm)
     margin-bottom: 0
 
 .nav li
@@ -45,5 +45,22 @@ a
     font-weight: 600
     &.current, &.current:hover
       color: $saloon-red
+
+.navbar-toggle
+  margin-top: 30px
+  border: 1px #eee solid !important
+  border-radius: 0
+  &:hover
+    background: transparent !important
+    border-color: #ccc !important
+
+  .icon-bar-label
+    padding-left: 10px
+    color: $saloon-red
+    line-height: 15px
+
+.navbar-default .navbar-toggle .icon-bar
+  background-color: $saloon-red
+
 img
   max-width: 100%

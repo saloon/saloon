@@ -1,7 +1,7 @@
 // a flag to toggle asset pipeline / compass integration
 // defaults to true if twbs-font-path function is present (no function => twbs-font-path('') parsed as string == right side)
 // in Sass 3.3 this can be improved with: function-exists(twbs-font-path)
-$bootstrap-sass-asset-helper: (twbs-font-path('') != unquote("twbs-font-path('')")) !default;
+$bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")')) !default;
 //
 // Variables
 // --------------------------------------------------
@@ -26,7 +26,7 @@ $brand-danger:          #d9534f !default;
 
 //== Scaffolding
 //
-// ## Settings for some of the most global styles.
+//## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
@@ -62,7 +62,7 @@ $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
-//** Computed "line-height" (`font-size` &times; `line-height`) for use with `margin`, `padding`, etc.
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
@@ -72,12 +72,16 @@ $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
 
-//-- Iconography
+//== Iconography
 //
-//## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
+//** Load fonts from this directory.
 $icon-font-path: "bootstrap/" !default;
+//** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
+//** Element ID within SVG icon file.
+$icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 
 
 //== Components
@@ -236,7 +240,7 @@ $dropdown-link-disabled-color:   $gray-light !default;
 //** Text color for headers within dropdown menus.
 $dropdown-header-color:          $gray-light !default;
 
-// Note: Deprecated $dropdown-caret-color as of v3.1
+// Note: Deprecated $dropdown-caret-color as of v3.1.0
 $dropdown-caret-color:           #000 !default;
 
 
@@ -305,6 +309,26 @@ $grid-float-breakpoint:     $screen-sm-min !default;
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 
 
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             ((720px + $grid-gutter-width)) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((940px + $grid-gutter-width)) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
 //== Navbar
 //
 //##
@@ -315,6 +339,7 @@ $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+$navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #777 !default;
 $navbar-default-bg:                #f8f8f8 !default;
@@ -508,9 +533,9 @@ $popover-arrow-color:                 #fff !default;
 //** Popover outer arrow width
 $popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
 //** Popover outer arrow color
-$popover-arrow-outer-color:           rgba(0,0,0,.25) !default;
+$popover-arrow-outer-color:           rgba($popover-border-color, 0.05) !default;
 //** Popover outer arrow fallback color
-$popover-arrow-outer-fallback-color:  #999 !default;
+$popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%) !default;
 
 
 //== Labels
@@ -541,7 +566,7 @@ $label-link-hover-color:      #fff !default;
 //##
 
 //** Padding applied to the modal body
-$modal-inner-padding:         20px !default;
+$modal-inner-padding:         15px !default;
 
 //** Padding applied to the modal title
 $modal-title-padding:         15px !default;
@@ -552,7 +577,7 @@ $modal-title-line-height:     $line-height-base !default;
 $modal-content-bg:                             #fff !default;
 //** Modal content border color
 $modal-content-border-color:                   rgba(0,0,0,.2) !default;
-//** Modal content border color <strong>for IE8</strong>
+//** Modal content border color **for IE8**
 $modal-content-fallback-border-color:          #999 !default;
 
 //** Modal backdrop background color
@@ -565,6 +590,7 @@ $modal-header-border-color:   #e5e5e5 !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 
 $modal-lg:                    900px !default;
+$modal-md:                    600px !default;
 $modal-sm:                    300px !default;
 
 
@@ -625,17 +651,26 @@ $list-group-border:             #ddd !default;
 //** List group border radius
 $list-group-border-radius:      $border-radius-base !default;
 
-//** Background color of single list elements on hover
+//** Background color of single list items on hover
 $list-group-hover-bg:           #f5f5f5 !default;
-//** Text color of active list elements
+//** Text color of active list items
 $list-group-active-color:       $component-active-color !default;
-//** Background color of active list elements
+//** Background color of active list items
 $list-group-active-bg:          $component-active-bg !default;
 //** Border color of active list elements
 $list-group-active-border:      $list-group-active-bg !default;
+//** Text color for content within active list items
 $list-group-active-text-color:  lighten($list-group-active-bg, 40%) !default;
 
+//** Text color of disabled list items
+$list-group-disabled-color:      $gray-light !default;
+//** Background color of disabled list items
+$list-group-disabled-bg:         $gray-lighter !default;
+//** Text color for content within disabled list items
+$list-group-disabled-text-color: $list-group-disabled-color !default;
+
 $list-group-link-color:         #555 !default;
+$list-group-link-hover-color:   $list-group-link-color !default;
 $list-group-link-heading-color: #333 !default;
 
 
@@ -645,6 +680,8 @@ $list-group-link-heading-color: #333 !default;
 
 $panel-bg:                    #fff !default;
 $panel-body-padding:          15px !default;
+$panel-heading-padding:       10px 15px !default;
+$panel-footer-padding:        $panel-heading-padding !default;
 $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
@@ -792,6 +829,8 @@ $abbr-border-color:           $gray-light !default;
 $headings-small-color:        $gray-light !default;
 //** Blockquote small color
 $blockquote-small-color:      $gray-light !default;
+//** Blockquote font size
+$blockquote-font-size:        ($font-size-base * 1.25) !default;
 //** Blockquote border color
 $blockquote-border-color:     $gray-lighter !default;
 //** Page header border color
@@ -807,23 +846,3 @@ $hr-border:                   $gray-lighter !default;
 
 //** Horizontal offset for forms and lists.
 $component-offset-horizontal: 180px !default;
-
-
-//== Container sizes
-//
-//## Define the maximum width of `.container` for different screen sizes.
-
-// Small screen / tablet
-$container-tablet:             ((720px + $grid-gutter-width)) !default;
-//** For `$screen-sm-min` and up.
-$container-sm:                 $container-tablet !default;
-
-// Medium screen / desktop
-$container-desktop:            ((940px + $grid-gutter-width)) !default;
-//** For `$screen-md-min` and up.
-$container-md:                 $container-desktop !default;
-
-// Large screen / wide desktop
-$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
-//** For `$screen-lg-min` and up.
-$container-lg:                 $container-large-desktop !default;

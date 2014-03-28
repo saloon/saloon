@@ -8,5 +8,4 @@ $(function(){
 
   $(window).on('resize', resize_helper);
 
-
 });
