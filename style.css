@@ -3058,7 +3058,10 @@ td.visible-print {
   line-height: 30px;
   padding: 4px 20px;
   border-radius: 5px;
-  width: auto; }
+  width: auto !important; }
+
+.mc_var_label {
+  display: none; }
 
 body {
   border-top: #c53c3d 4px solid; }
