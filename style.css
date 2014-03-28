@@ -2902,7 +2902,7 @@ td.visible-print {
         font-size: 35px; } }
     @media (min-width: 992px) {
       .blog-single .article-title {
-        font-size: 50px;
+        font-size: 45px;
         letter-spacing: -2px; } }
     .blog-single .article-title span {
       background: rgba(50, 50, 50, 0.3); }
