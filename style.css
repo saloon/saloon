@@ -5321,7 +5321,7 @@ button.close {
   bottom: 50px; }
   @media (min-height: 600px) {
     .blog-single-article-header-wrapper {
-      bottom: 50px; } }
+      bottom: 100px; } }
 
 .blog-single-article-header .img-author {
   width: 50px;
