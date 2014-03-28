@@ -3012,9 +3012,10 @@ td.visible-print {
   margin-top: 30px;
   margin-bottom: 30px; }
 
-.blog-single .subscribe p, .blog-single .subscribe strong,
+.blog-single .subscribe p, .blog-single .subscribe strong, .blog-single .subscribe a,
 .blog-single .about-author p,
-.blog-single .about-author strong {
+.blog-single .about-author strong,
+.blog-single .about-author a {
   padding-top: 0;
   font-size: 18px; }
 
