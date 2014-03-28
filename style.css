@@ -5308,7 +5308,8 @@ button.close {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
 
 .article-featured-image-wrapper {
   height: auto;
@@ -5320,7 +5321,7 @@ button.close {
   bottom: 50px; }
   @media (min-height: 600px) {
     .blog-single-article-header-wrapper {
-      bottom: 150px; } }
+      bottom: 50px; } }
 
 .blog-single-article-header .img-author {
   width: 50px;

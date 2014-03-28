@@ -1,1 +1,1 @@
-$(function(){var e=function(){$(".article-featured-image").height($(window).outerHeight()-$(".navbar").height()-4)};e(),$(".blog-single a").smoothScroll({offset:-60}),$(window).on("resize",e)});
+$(function(){var e=function(){var e=$(window).outerHeight()-$(".navbar").height()-4;$(".article-featured-image").height(e>300?e:300)};e(),$(".blog-single a").smoothScroll({offset:-60}),$(window).on("resize",e)});
