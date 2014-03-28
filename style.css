@@ -2956,13 +2956,13 @@ td.visible-print {
 .blog-single-article-header,
 .blog-single .content,
 .blog-single .about-author,
-.blog-single .subscribe {
+.blog-single .subscribe-inner {
   padding: 0 20px; }
   @media (min-width: 768px) {
     .blog-single-article-header,
     .blog-single .content,
     .blog-single .about-author,
-    .blog-single .subscribe {
+    .blog-single .subscribe-inner {
       width: 672px;
       margin: auto; } }
 
@@ -3017,7 +3017,7 @@ td.visible-print {
 .blog-single .about-author strong,
 .blog-single .about-author a {
   padding-top: 0;
-  font-size: 18px; }
+  font-size: 20px; }
 
 .blog-single .about-author hr {
   width: 100px;
@@ -3032,14 +3032,34 @@ td.visible-print {
   margin-top: 0; }
 
 .blog-single .subscribe {
+  background: #fafafa;
   border-top: 1px #eeeeee solid;
-  margin-top: 50px;
-  padding-bottom: 50px; }
+  margin-top: 80px;
+  padding-bottom: 30px; }
 
 .blog-list .article {
   padding-bottom: 50px;
   margin-bottom: 50px;
   border-bottom: 2px #eeeeee solid; }
+
+#mc_signup_form .mc_input {
+  border-radius: 5px;
+  box-shadow: none;
+  border: 2px #dddddd solid;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 250px;
+  float: left; }
+
+#mc_signup_submit {
+  margin-left: 10px;
+  background: #c53c3d;
+  color: white;
+  border: 0;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 4px 20px;
+  border-radius: 5px; }
 
 body {
   border-top: #c53c3d 4px solid; }

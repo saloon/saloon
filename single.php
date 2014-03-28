@@ -60,10 +60,11 @@
 
 
 <div class="subscribe">
-  <h3>Who are we?</h3>
-  <p>We're just two developers who love creating products. On this site we want to share some of our projects, ideas and experiences with you.</p>
-  <p>If you want to <strong>stay up to date</strong>, join <strong>1 billion subscribers</strong>:</p>
-  <?php mailchimpSF_signup_form(); ?>
+  <div class="subscribe-inner">
+    <h3>Who are we?</h3>
+    <p>We're just two developers who love creating products. On this site we want to share some of our projects, ideas and experiences with you.</p>
+    <p>If you want to <strong>stay up to date</strong>, join <strong>1 billion subscribers</strong>:</p>
+  </div>
 </div>
 
 <?php get_footer(); ?>
