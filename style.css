@@ -5495,11 +5495,11 @@ a {
 
 .navbar-toggle {
   margin-top: 30px;
-  border: 1px #eeeeee solid !important;
+  border: 1px #f1f1f1 solid !important;
   border-radius: 0; }
   .navbar-toggle:hover {
     background: transparent !important;
-    border-color: #cccccc !important; }
+    border-color: #eeeeee !important; }
   .navbar-toggle .icon-bar-label {
     padding-left: 10px;
     color: #c53c3d;
