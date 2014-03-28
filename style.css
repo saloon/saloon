@@ -3060,8 +3060,8 @@ td.visible-print {
   border-radius: 5px;
   width: auto !important; }
 
-.mc_var_label {
-  display: none; }
+.mc_success_msg {
+  font-family: "proxima-nova"; }
 
 body {
   border-top: #c53c3d 4px solid; }
