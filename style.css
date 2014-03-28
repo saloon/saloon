@@ -3047,9 +3047,7 @@ td.visible-print {
   box-shadow: none;
   border: 2px #dddddd solid;
   padding: 5px 10px;
-  font-size: 20px;
-  width: 250px;
-  float: left; }
+  font-size: 20px; }
 
 #mc_signup_submit {
   margin-left: 10px;
@@ -3059,7 +3057,8 @@ td.visible-print {
   font-size: 18px;
   line-height: 30px;
   padding: 4px 20px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: auto; }
 
 body {
   border-top: #c53c3d 4px solid; }
