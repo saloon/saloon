@@ -63,7 +63,7 @@
   <div class="subscribe-inner">
     <h3>Who are we?</h3>
     <p>We're two developers who love creating products. Here we want to share some of our projects, ideas and experiences.</p>
-    <p>If you want to <strong>stay up to date</strong>, join our<strong>10,382,385 subscribers</strong>:</p>
+    <p>If you want to <strong>stay up to date</strong>, join <strong>1 billion subscribers</strong>:</p>
     <?php mailchimpSF_signup_form(); ?>
   </div>
 </div>
