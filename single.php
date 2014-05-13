@@ -53,12 +53,16 @@
         </div>
       </div>
     </div>
+
+    <div class="disqus-container">
+      <?php disqus_embed('saloon'); ?>
+    </div>
+
   </div>
 
 
 <?php endwhile; ?>
 
-<?php disqus_embed('saloon'); ?>
 
 <div class="subscribe">
   <div class="subscribe-inner">
