@@ -58,6 +58,7 @@
 
 <?php endwhile; ?>
 
+<?php disqus_embed('saloon'); ?>
 
 <div class="subscribe">
   <div class="subscribe-inner">
