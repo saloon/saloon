@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <p>I am a <?= floor((time() - strtotime('Sept 24, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old developer who felt in love with UI and UX design. Creating something from nothing was always fascinating to me. Besides studying, working, my band and other stuff I enjoy coding in Ruby on Rails.</p>
+        <p>I am a <?= floor((time() - strtotime('Sept 24, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old developer who fell in love with UI and UX design. Creating something from nothing was always fascinating to me. Besides studying, working, my band and other stuff I enjoy coding in Ruby on Rails.</p>
 
         <ul class="list-inline social-icons">
           <li><a href="http://github.com/nicolas-dular"><i class="fa fa-github"></i></a></li>
