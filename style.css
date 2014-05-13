@@ -5433,6 +5433,9 @@ button.close {
   margin-top: 80px;
   padding-bottom: 30px; }
 
+.blog-single .disqus-container {
+  margin-top: 50px; }
+
 #mc_signup_form .mc_input {
   border-radius: 5px;
   box-shadow: none;
