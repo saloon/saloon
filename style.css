@@ -5544,3 +5544,6 @@ a {
 
 img {
   max-width: 100%; }
+
+.fadeIn, .fadeInLeft, .fadeInRight {
+  -webkit-animation-duration: 0.3s; }
