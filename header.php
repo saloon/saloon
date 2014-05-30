@@ -42,7 +42,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
-  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/css/main.css">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/vendor/animate.min.css">
   <meta name="author" content="Saloon">
   <meta name="city" content="Vienna">
@@ -63,13 +63,6 @@
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf('%s latest comments', wp_specialchars( get_bloginfo('name'), 1 ) ); ?>">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-
-  <script type="text/javascript" src="//use.typekit.net/jxr7xsz.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.smooth-scroll.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 
