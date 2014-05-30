@@ -5436,19 +5436,30 @@ button.close {
 .blog-single .disqus-container {
   margin-top: 50px; }
 
-.blog-list a.article {
+.blog-list .article {
   display: block;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px; }
-  .blog-list a.article:hover {
-    text-decoration: none; }
-  .blog-list a.article .article-title {
-    font-size: 1.2em;
-    color: #c53c3d; }
+  .blog-list .article .article-header a.article-title {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 0;
+    font-size: 1.2em; }
     @media (min-width: 768px) {
-      .blog-list a.article .article-title {
+      .blog-list .article .article-header a.article-title {
         font-size: 1.5em; } }
+  .blog-list .article .article-header .article-title-about {
+    margin-top: 5px; }
+    .blog-list .article .article-header .article-title-about .img-author {
+      width: 25px;
+      height: 25px;
+      margin-top: 5px; }
+    .blog-list .article .article-header .article-title-about .info {
+      font-size: 1em;
+      color: #999999;
+      line-height: 1.3em; }
 
 #mc_signup_form .mc_input {
   border-radius: 5px;

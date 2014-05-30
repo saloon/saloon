@@ -1,14 +1,27 @@
 .blog-list
-  a.article
+  .article
     display: block
     border-radius: 5px
     padding: 10px
     margin-bottom: 20px
-    &:hover
-      text-decoration: none
 
-    .article-title
-      font-size: 1.2em
-      color: $saloon-red
-      @media (min-width: $screen-sm)
-        font-size: 1.5em
+    .article-header
+      a.article-title
+        display: block
+        width: 100%
+        padding-top: 10px
+        padding-bottom: 0
+        font-size: 1.2em
+        @media (min-width: $screen-sm)
+          font-size: 1.5em
+
+      .article-title-about
+        margin-top: 5px
+        .img-author
+          width: 25px
+          height: 25px
+          margin-top: 5px
+        .info
+          font-size: 1em
+          color: $gray-light
+          line-height: 1.3em
