@@ -8,7 +8,7 @@
 <div class="container blog-list">
   <div class="row">
     <?php while ( have_posts() ) : the_post(); ?>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 animated fadeIn">
         <article class="article">
           <div class="article-header">
             <div class="article-header-thumbnail">

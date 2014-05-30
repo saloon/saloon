@@ -7,7 +7,7 @@
 
 <div class="container about">
   <div class="row">
-    <div class="col-md-6 col-sm-12 nicolas">
+    <div class="col-md-6 col-sm-12 nicolas animated fadeInLeft">
       <div class="about-text">
 
         <div class="clearfix">
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div class="col-md-6 col-sm-12 philipp">
+    <div class="col-md-6 col-sm-12 philipp animated fadeInRight">
       <div class="about-text">
         <div class="clearfix">
           <div class="about-text-header">
