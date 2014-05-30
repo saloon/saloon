@@ -7,7 +7,7 @@
   <div class="article-featured-image-wrapper">
     <div class="article-featured-image animated fadeIn" style="background-image:url('<?=$imgsrc[0]?>');">
       <div class="blog-single-article-header-wrapper">
-        <div class="blog-single-article-header animated fadeIn">
+        <div class="blog-single-article-header">
           <h1 class="article-title">
             <span>
               <?php the_title(); ?>
