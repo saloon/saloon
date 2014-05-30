@@ -1,6 +1,6 @@
 $(function(){
   var resize_helper = function() {
-    var setHeightTo = $(window).outerHeight() - $('.navbar').height() - 300;
+    var setHeightTo = $(window).outerHeight() - $('.navbar').height() - 200;
 
     $('.article-featured-image').height((setHeightTo > 300) ? setHeightTo : 300);
   };
