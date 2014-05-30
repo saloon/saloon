@@ -5436,6 +5436,20 @@ button.close {
 .blog-single .disqus-container {
   margin-top: 50px; }
 
+.blog-list a.article {
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; }
+  .blog-list a.article:hover {
+    text-decoration: none; }
+  .blog-list a.article .article-title {
+    font-size: 1.2em;
+    color: #c53c3d; }
+    @media (min-width: 768px) {
+      .blog-list a.article .article-title {
+        font-size: 1.5em; } }
+
 #mc_signup_form .mc_input {
   border-radius: 5px;
   box-shadow: none;
