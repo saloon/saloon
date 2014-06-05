@@ -38,12 +38,12 @@
 
             <div class="about-text-name">
               <h2>Philipp Spie&szlig;</h2>
-              <h4><small><i class="fa fa-heart"></i> Ruby on Rails | Coffe-Script | Ice-Cream</small></h4>
+              <h4><small><i class="fa fa-heart"></i> Ruby on Rails | Node.js | Interaction Design</small></h4>
             </div>
           </div>
         </div>
 
-        <p>I'm a computer science student and programming for <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)) - 11; ?> years. Today, I do most of the development jobs in Ruby or Coffee-Script. At Saloon, I'm responsible for making everything rock-solid. I'm <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old.</p>
+        <p>I'm a computer science student and programming for <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)) - 11; ?> years. I do most of the development jobs in Ruby or Coffee-Script. At Saloon, I'm responsible for making everyone happy. I'm <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old.</p>
 
         <ul class="list-inline social-icons">
           <li><a href="http://github.com/philipp-spiess"><i class="fa fa-github"></i></a></li>
