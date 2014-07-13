@@ -5440,6 +5440,11 @@ button.close {
 .blog-single .disqus-container {
   margin-top: 50px; }
 
+kbd {
+  background: #eeeeee;
+  color: #555555;
+  letter-spacing: 0.1em; }
+
 .blog-list .article {
   display: block;
   border-radius: 5px;
