@@ -1,5 +1,5 @@
 
-  <script  type="text/javascript" src="//use.typekit.net/jxr7xsz.js"></script>
+  <!--<script  type="text/javascript" src="//use.typekit.net/jxr7xsz.js"></script>
   <script  type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script async src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script>
@@ -10,7 +10,8 @@
 
     ga('create', 'UA-37381888-1', 'saloon.io');
     ga('send', 'pageview');
-  </script>
+  </script>-->
   <?php wp_footer(); ?>
+  </div>
 </body>
 </html>

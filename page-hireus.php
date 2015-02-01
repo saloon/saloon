@@ -5,87 +5,67 @@
  get_header();
 ?>
 
-<div class="container hire-us">
+<script type="text/javascript">
+  $(function(){
+    $(".main").onepage_scroll({
+      sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+      easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+      // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+      animationTime: 500,             // AnimationTime let you define how long each section takes to animate
+      pagination: false,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+      updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+      beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+      afterMove: function(index) {
+        // $('body').css('border', 0)
+      },   // This option accepts a callback function. The function will be called after the page moves.
+      loop: true,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+      keyboard: true,                  // You can activate the keyboard controls
+      responsiveFallback: 800,        // You can fallback to normal page scroll by defining the width of the browser in which
+      // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+      // the browser's width is less than 600, the fallback will kick in.
+      direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
+    });
+  });
 
-  <div class="row section hire-us-title">
-    <div class="col-sm-12 col-md-offset-2  ">
-      <h1 class="animated fadeIn">Let us help you <b>building your product</b>
-      <br>
-      <small>Building products is more than programming</small>
-      </h1>
-    </div>
-  </div>
+</script>
 
-  <div class="row section ">
-    <div class="col-sm-8 col-md-offset-2">
-      <p>Everyone likes thoughtful products that cares about design and user experience. Our mission is it to <b>build products people love</b>. In the last 8 years we are working on web applications - that means, we've already done every mistake and know what is important.</p>
-    </div>
-  </div>
+<div class="hire-us">
 
-  <div class="row section">
+  <div class="hire-us-section section-white">
 
-    <div class="col-sm-8 col-md-6 col-md-offset-2">
+    <section class="section-about section">
+      <div class="container">
+        <div class="quote">"We want to desgin and develop people love to use"</div>
+        <a href="#">What our customers say</a>
+      </div>
+    </section>
+    <section class="section-jobiqo section">
+      <h2 class="section-title">Jobiqo<br>
+      </h2>
+      <h3 class="section-tags">User Interface & User Experience Design</h3>
+      <div class="media testimonial">
+        <a class="pull-left" href="#">
+          <img src="<?php bloginfo('template_directory'); ?>/img/testimonial1.jpeg" class="img-circle avatar">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">Klaus Furtmüller</h4>
+          <p>This is one of the best designs we had in the last years. It is a pleasure for us to work with these guys</p>
+        </div>
+      </div>
 
-      <h4>The right features for the first version</h4>
-      <p>
-        It's important to stay focused and build features your customers want. We'll help you with market research,
-        which features should be build and how it should work.
-      </p>
-    </div>
-    <div class="col-sm-3 icon-big">
-      <i class="fa fa-cubes"></i>
-    </div>
-  </div>
+      <div class="screenshot col-sm-4">
+        <img src="<?php bloginfo('template_directory'); ?>/img/jobiqo1.png" class="img-circle">
+      </div>
+      <div class="screenshot col-sm-4">
+        <img src="<?php bloginfo('template_directory'); ?>/img/jobiqo1.png" class="img-circle">
+      </div>
+      <div class="screenshot col-sm-4">
+        <img src="<?php bloginfo('template_directory'); ?>/img/jobiqo1.png" class="img-circle">
+      </div>
+    </section>
+    <section class="section-swat section">Test2</section>
+    <section class="section-ntry section">Test2</section>
 
-  <div class="row section ">
-
-
-    <div class="col-sm-8 col-md-6 col-md-offset-2">
-      <h4>Getting customers before launching the product</h4>
-      <p>Launching your product without existing customers would be boring. We'll create a landing page where you can
-        explain your idea and future customers can sign up for the first release.
-      </p>
-    </div>
-
-    <div class="col-sm-3 icon-big">
-      <i class="fa fa-child"></i>
-    </div>
-  </div>
-
-  <div class="row section ">
-    <div class="col-sm-8 col-md-6 col-md-offset-2">
-      <h4>Building a lovable product</h4>
-      <p>With our experience we build a reliable and stable software your customers will feel excited about.
-        It's important to us to provide a good looking user interface and user experience.
-      </p>
-    </div>
-    <div class="col-sm-3 icon-big">
-      <i class="fa fa-heart"></i>
-    </div>
-
-  </div>
-
-
-  <div class="row section ">
-    <div class="col-sm-8 col-md-6 col-md-offset-2">
-      <h4>Analyzing and testing</h4>
-      <p>Your customers don't use the product that often? We'll find out why and what should be changed to get them back
-      </p>
-    </div>
-    <div class="col-sm-3 icon-big">
-      <i class="fa fa-bar-chart-o"></i>
-    </div>
-  </div>
-
-  <div class="row section">
-    <div class="col-sm-8 col-md-6 col-md-offset-2">
-      <h2>Contact us</h2>
-      <p>Meet us for a noncommittal conversation. Just contact us and we'll schedule up a meeting</p>
-      <a class="btn btn-primary text-center">Contact us</a>
-    </div>
-    <div class="col-sm-3 icon-big">
-      <i class="fa fa-send"></i>
-    </div>
   </div>
 
 </div>

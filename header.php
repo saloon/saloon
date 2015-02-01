@@ -43,6 +43,7 @@
 
   <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/vendor/animate.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/vendor/onepage.css">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/style.css">
   <meta name="author" content="Saloon">
   <meta name="city" content="Vienna">
@@ -59,37 +60,39 @@
 
   <?php remove_action('wp_head', 'wp_generator'); ?>
   <?php wp_head(); ?>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.onepage-scroll.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/min/main.min.js"></script>
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf('%s latest posts', wp_specialchars( get_bloginfo('name'), 1 ) ); ?>">
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf('%s latest comments', wp_specialchars( get_bloginfo('name'), 1 ) ); ?>">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
 </head>
 
 <body>
-<div class="container">
+  <div class="main">
+    <div class="container">
 
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <div class="pull-left">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <div class="pull-left">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </div>
+            <div class="icon-bar-label pull-right">MENU</div>
+          </button>
+
+          <a href="#"><img class="navbar-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
         </div>
-        <div class="icon-bar-label pull-right">MENU</div>
-      </button>
-
-      <a href="#"><img class="navbar-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/blog" class=" <? echo (is_single() || is_page('blog')) ? 'current':'' ?>">Blog</a></li>
+            <li><a href="/about" class=" <? echo is_page('about') ? 'current':'' ?>">About us</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/blog" class=" <? echo (is_single() || is_page('blog')) ? 'current':'' ?>">Blog</a></li>
-        <li><a href="/about" class=" <? echo is_page('about') ? 'current':'' ?>">About us</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>

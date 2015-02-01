@@ -7,8 +7,14 @@
 @import 'hire-us'
 @import 'subscribe'
 
-body
+.body-border-top
   border-top: $saloon-red 4px solid
+
+.body-border-top-none
+  border-top: 0px
+
+body
+  @extend .body-border-top
 
 h1, h2, h3, h4, h5, h6
   font-family: "proxima-nova", sans-serif
