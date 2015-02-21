@@ -5450,6 +5450,8 @@ kbd {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px; }
+  .blog-list .article img {
+    height: 190px; }
   .blog-list .article .article-header a.article-title {
     display: block;
     width: 100%;
