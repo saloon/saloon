@@ -61,8 +61,8 @@
   <?php remove_action('wp_head', 'wp_generator'); ?>
   <?php wp_head(); ?>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.smooth-scroll.min.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.onepage-scroll.min.js"></script>
+  <!-- // <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.smooth-scroll.min.js"></script>
+  // <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.onepage-scroll.min.js"></script> -->
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/min/main.min.js"></script>
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf('%s latest posts', wp_specialchars( get_bloginfo('name'), 1 ) ); ?>">
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf('%s latest comments', wp_specialchars( get_bloginfo('name'), 1 ) ); ?>">
