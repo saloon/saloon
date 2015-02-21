@@ -43,7 +43,6 @@
 
   <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/vendor/animate.min.css">
-  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/vendor/onepage.css">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/style.css">
   <meta name="author" content="Saloon">
   <meta name="city" content="Vienna">
