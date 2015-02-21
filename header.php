@@ -86,7 +86,7 @@
             <div class="icon-bar-label pull-right">MENU</div>
           </button>
 
-          <a href="#"><img class="navbar-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+          <a href="/"><img class="navbar-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="nav navbar-nav navbar-right">
