@@ -44,10 +44,9 @@
         </div>
 
         <p>
-          I'm a <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?>
-          year old software engineer with a sense for interaction design.
-          I do most of the development jobs using Ruby on Rails or Ember.js.
-          At Saloon, I'm responsible for making everyone happy. I'm years old.
+          I think good software should be usable. This is why I started to become
+          a software developer back in 2003. Today, I do most of the development jobs
+          using Ruby on Rails or Ember.js. I'm <?= floor((time() - strtotime('nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old.
         </p>
 
         <ul class="list-inline social-icons">
