@@ -89,8 +89,8 @@
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/blog" class=" <? echo (is_single() || is_page('blog')) ? 'current':'' ?>">Blog</a></li>
             <li><a href="/about" class=" <? echo is_page('about') ? 'current':'' ?>">About us</a></li>
+            <li><a href="/blog" class=" <? echo (is_single() || is_page('blog')) ? 'current':'' ?>">Blog</a></li>
             <li><a href="/contact" class=" <? echo is_page('contact') ? 'current':'' ?>">Contact</a></li>
           </ul>
         </div>
