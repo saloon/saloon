@@ -38,17 +38,22 @@
 
             <div class="about-text-name">
               <h2>Philipp Spie&szlig;</h2>
-              <h4><small><i class="fa fa-heart"></i> Ruby on Rails | Node.js | Interaction Design</small></h4>
+              <h4><small><i class="fa fa-heart"></i> Ruby on Rails | Ember.js | Interaction Design</small></h4>
             </div>
           </div>
         </div>
 
-        <p>I'm a computer science student and programming for <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)) - 11; ?> years. I do most of the development jobs in Ruby or Coffee-Script. At Saloon, I'm responsible for making everyone happy. I'm <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?> years old.</p>
+        <p>
+          I'm a <?= floor((time() - strtotime('Nov 19, 1992 00:00:00 GMT+2')) / (60*60*24*365)); ?>
+          year old software engineer with a sense for interaction design.
+          I do most of the development jobs using Ruby on Rails or Ember.js.
+          At Saloon, I'm responsible for making everyone happy. I'm years old.
+        </p>
 
         <ul class="list-inline social-icons">
           <li><a href="http://github.com/philipp-spiess"><i class="fa fa-github"></i></a></li>
           <li><a href="http://twitter.com/philippspiess"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="http://facebook.com/spiessphilipp"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="http://dribbble.com/PhilippSpiess"><i class="fa fa-dribbble"></i></a></li>
         </ul>
       </div>
     </div>
