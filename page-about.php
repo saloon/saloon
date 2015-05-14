@@ -7,7 +7,7 @@
 
 <div class="container about">
 
-  <h1 class="text-center">We build software poeple love to use</h1>
+  <h1 class="text-center">We build software people love to use</h1>
   <br>
   <br>
 
